@@ -1,0 +1,11 @@
+YODIELAND LOCAL SETUP
+
+1. Run `python server.py` from this folder and open http://localhost:8765. The member sign-up/sign-in page is linked from the ASCII nav and the `[ ACCOUNT ]` button.
+2. Members can create an account with an email and a password of at least 12 characters. New accounts are read-only by default.
+3. To enable staff sign-up, set a private invite code before starting the server in PowerShell:
+   $env:STAFF_SIGNUP_CODE = "use-a-long-private-code-here"
+   Share the code only with staff. Staff enter it in the optional invite-code field during sign-up. Without this setting, sign-ups can create member accounts but not staff accounts.
+4. Signed-in staff with `manage_permissions` can open `[ RIGHTS ]` and toggle capabilities for members and staff. The settings are stored in `YodieLand-private/permissions.json`; you can also edit it directly. Capabilities are `post_thread`, `post_job`, `reply`, `revise_board`, `edit_copy`, and `manage_permissions`. Changes apply immediately; invalid configuration denies permissions.
+5. On a public HTTPS deployment, set `COOKIE_SECURE=1`. Keep `YodieLand-private` backed up and outside the public web root. Restarting the process signs all members out.
+
+Passwords are stored as salted scrypt hashes. Session cookies are HTTP-only and same-site. Visitors can read the boards without an account; regular members remain read-only unless their role privileges are deliberately changed. `YODIELAND_DATA_DIR` can point the server to another private data directory.
