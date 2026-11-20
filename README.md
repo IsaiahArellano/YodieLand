@@ -12,4 +12,4 @@ Visitors can send a story or correction through the info form, which opens an em
 
 ## GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` publishes the `site/` folder after each push to `main`. Set Pages source to **GitHub Actions**. The public site URL is <https://isaiaharellano.github.io/YodieLand/>.
+The workflow in `.github/workflows/pages.html` publishes the `site/` folder after each push to `main`. Set Pages source to **GitHub Actions**. The public site URL is <https://isaiaharellano.github.io/YodieLand/>.
