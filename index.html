@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101513">
+  <meta name="description" content="The public Mason's Club community archive and job board.">
+  <title>YodieLand | Mason's Club</title>
+  <link rel="stylesheet" href="YodieLand.css">
+  <script src="YodieLand-static.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#forum" aria-label="YodieLand home"><span class="wordmark-mark">Y</span><span>YODIELAND<span class="wordmark-sub">MASON'S CLUB</span></span></a>
+      <details class="nav-dropdown"><summary>+-- NAV --+</summary><nav class="nav-menu" aria-label="Main navigation"><a href="#forum">[01] FORUM</a><a href="#jobs">[02] JOB BOARD</a><a href="#clubhouse">[03] CLUBHOUSE</a><a href="#request">[04] INFO</a><a href="https://github.com/IsaiahArellano/YodieLand" target="_blank" rel="noopener">[05] GITHUB</a></nav></details>
+      <div class="connection"><span class="connection-dot"></span> PUBLIC BOARD <span class="connection-sep">/</span> READ ONLY</div>
+    </header>
+    <main>
+      <section class="intro-band" aria-labelledby="page-title">
+        <div class="intro-copy"><div class="eyebrow"><span class="eyebrow-mark">&gt;_</span> [ PUBLIC ARCHIVE ]</div><h1 id="page-title">[ LOADING ]</h1><p id="intro-copy">[ LOADING ]</p></div>
+        <aside class="intro-note"><span class="note-label">[ BOARD NOTE ]</span><p id="board-note">[ LOADING ]</p></aside>
+      </section>
+      <div class="workspace-grid">
+        <div class="main-column">
+          <section class="panel forum-panel" id="forum" aria-labelledby="forum-title">
+            <div class="panel-heading"><div><div class="section-index">CHANNEL 01 <span>//</span> COMMUNITY</div><h2 id="forum-title">Message board</h2></div></div>
+            <div class="board-controls"><div class="board-count"><span class="pulse-dot"></span><span id="thread-count">00</span> THREADS <span class="muted-slash">/ READ ONLY</span></div><label class="filter-control" for="topic-filter">+ FILTER + <select id="topic-filter" aria-label="Filter threads"><option value="all">[00] ALL</option><option value="memories">[01] MEMORIES</option><option value="reunions">[02] REUNIONS</option><option value="club-notes">[03] CLUB NOTES</option></select></label></div>
+            <div class="thread-list" id="thread-list" aria-live="polite"></div><div class="empty-state" id="thread-empty" hidden>[ NO THREADS ]</div>
+          </section>
+          <section class="panel jobs-panel" id="jobs" aria-labelledby="jobs-title">
+            <div class="panel-heading"><div><div class="section-index">CHANNEL 02 <span>//</span> WORK</div><h2 id="jobs-title">Job board</h2></div></div>
+            <p class="static-copy" id="jobs-copy"></p><div class="job-list" id="job-list" aria-live="polite"></div><div class="empty-state" id="job-empty" hidden>[ NO OPEN LISTINGS ]</div>
+          </section>
+        </div>
+        <aside class="side-column">
+          <section class="panel status-panel" aria-labelledby="status-title"><div class="side-panel-heading"><span class="section-index">SYSTEM STATUS</span><span class="status-led" aria-label="Online"></span></div><h2 id="status-title">Board status</h2><p class="static-copy" id="status-copy"></p><div class="status-metrics"><div><span class="metric-value" id="memory-count">00</span><span class="metric-label">THREADS</span></div><div><span class="metric-value" id="opening-count">00</span><span class="metric-label">LISTINGS</span></div><div><span class="metric-value">[ RO ]</span><span class="metric-label">READ ONLY</span></div></div></section>
+          <section class="archive-panel" id="clubhouse" aria-labelledby="clubhouse-title"><div class="archive-top"><span>[ CHANNEL 03 ]</span><span>[ CLUBHOUSE ]</span></div><div class="archive-stamp" aria-hidden="true">Y<br><span>L</span></div><div class="section-index">[ CHANNEL 03 // CLUBHOUSE ]</div><h2 id="clubhouse-title">Clubhouse</h2><p class="static-copy" id="archive-copy"></p><div class="archive-rule"></div></section>
+          <section class="panel request-panel" id="request" aria-labelledby="request-title"><div class="section-index">CHANNEL 04 <span>//</span> CONTACT</div><h2 id="request-title">Request info</h2><p class="static-copy" id="request-copy"></p><form id="request-form" class="request-form"><label>YOUR NAME<input name="name" maxlength="60" required></label><label>EMAIL<input name="email" type="email" maxlength="120" required></label><label>TOPIC<select name="topic"><option>Club history</option><option>Correction</option><option>Job listing</option><option>Other</option></select></label><label>MESSAGE<textarea name="message" rows="3" maxlength="1200" required></textarea></label><button class="text-submit" type="submit">[ EMAIL THE DESK ]</button><p class="form-hint request-hint">[ OPENS YOUR EMAIL APP ]</p></form></section>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer"><a class="footer-mark" href="#forum">Y/L</a><span>YODIELAND // MASON'S CLUB</span><span class="footer-note" id="footer-copy"></span><a class="back-top" href="https://github.com/IsaiahArellano/YodieLand" target="_blank" rel="noopener">[ GITHUB ]</a><a class="back-top" href="#forum">[ TOP ]</a></footer>
+  </div>
+</body>
+</html>

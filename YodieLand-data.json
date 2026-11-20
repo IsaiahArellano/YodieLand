@@ -1,0 +1,14 @@
+{
+  "copy": {
+    "heroTitle": "Mason's Club",
+    "intro": "Public community archive and job board.",
+    "note": "Read-only public board. Contact the desk to submit a story or correction.",
+    "jobs": "Listings are maintained by the site owner.",
+    "status": "Public access / read-only boards.",
+    "archive": "Mason's Club archive.",
+    "request": "Send a question or correction to the desk.",
+    "footer": "Public archive."
+  },
+  "threads": [],
+  "jobs": []
+}
